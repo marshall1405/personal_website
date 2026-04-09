@@ -59,9 +59,9 @@
 
                 <section id="about" class="panel active">
                     <h2>About Me</h2>
-                    <p>Hi! I'm David Pavlicek. I'm a passionate developer and student who loves building things and solving problems. Use the navigation above to explore my skills, projects, education, and professional experience.</p>
-                    <p>I'm currently studying and working, always looking for new challenges and opportunities to grow.</p>
-                    <p>Feel free to reach out if you'd like to collaborate or just have a chat!</p>
+                    <p>Ahoj, I'm David Pavlicek! Born in 2003 in Prague, CZ, I currently live and work in Vienna, AT, though I move between the two cities almost weekly.</p>
+                    <p>I am a Data Engineer, Content Creator, and Student Assistant. I like to do things that interest me while also taking me outside of my comfort zone.</p>
+                    <p>Outside of tech and coding, I am a huge music, movie and videogame fan.</p>
                 </section>
 
                 <section id="skills" class="panel">
@@ -97,7 +97,14 @@
                                 </div>
                                 <div class="edu-meta">BSc Computer Science · Vienna, AT</div>
                                 <div class="edu-desc">
-                                    Computer Science education with elective courses in Parallel Computing, Foundations of Data Analysis, Signal &amp; Image Processing, Foundations of Computer Graphics, and Information Security Management.
+                                    Computer Science education. Elective courses:
+                                    <ul class="edu-courses">
+                                        <li>Parallel Computing</li>
+                                        <li>Foundations of Data Analysis</li>
+                                        <li>Signal &amp; Image Processing</li>
+                                        <li>Foundations of Computer Graphics</li>
+                                        <li>Information Security Management</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +118,7 @@
                                 </div>
                                 <div class="edu-meta">Scholarship Year · Vienna, AT</div>
                                 <div class="edu-desc">
-                                    A yearly scholarship in Vienna. Lived in a dormitory at one of Austria's most prestigious boarding schools.
+                                    A yearly scholarship in Vienna.
                                 </div>
                             </div>
                         </div>
@@ -134,11 +141,67 @@
                 </section>
 
                 <section id="experience" class="panel">
-                    <h2>Professional Experience</h2>
-                    <ul>
-                        <li>Job Title — Company, Year–Year</li>
-                        <li>Role — Company, Year–Year</li>
-                    </ul>
+                    <h2>Experience</h2>
+                    <div class="exp-list">
+
+                        <!-- UNIQA grouped -->
+                        <div class="exp-card">
+                            <img src="../photos/experience/uniqa.jpeg" alt="UNIQA" class="exp-logo">
+                            <div class="exp-body">
+                                <div class="exp-company">UNIQA Insurance Group <span class="exp-type">· Part-time</span></div>
+                                <div class="exp-role-group">
+                                    <div class="exp-role">
+                                        <span class="exp-role-title">Expert: Data Engineering &amp; Analytics</span>
+                                        <span class="exp-dates">Nov 2025 – Present</span>
+                                    </div>
+                                    <div class="exp-role">
+                                        <span class="exp-role-title">Student Job: Data Engineering &amp; Analytics</span>
+                                        <span class="exp-dates">Feb 2025 – Nov 2025 · 10 mos</span>
+                                    </div>
+                                </div>
+                                <div class="exp-meta">Vienna, Austria · Hybrid</div>
+                            </div>
+                        </div>
+
+                        <!-- YouTube -->
+                        <div class="exp-card">
+                            <img src="../photos/experience/youtube.jpeg" alt="YouTube" class="exp-logo">
+                            <div class="exp-body">
+                                <div class="exp-role-title-single">Content Creator</div>
+                                <div class="exp-company">YouTube <span class="exp-type">· Self-employed</span></div>
+                                <div class="exp-dates-single">Jan 2025 – Present</div>
+                                <div id="yt-stats" class="yt-stats">
+                                    <div class="yt-stat"><span class="yt-stat-value" id="yt-subs">—</span><span class="yt-stat-label">Subscribers</span></div>
+                                    <div class="yt-stat"><span class="yt-stat-value" id="yt-views">—</span><span class="yt-stat-label">Total Views</span></div>
+                                    <div class="yt-stat"><span class="yt-stat-value" id="yt-videos">—</span><span class="yt-stat-label">Videos</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Student Assistant -->
+                        <div class="exp-card">
+                            <img src="../photos/education/university.jpeg" alt="University of Vienna" class="exp-logo">
+                            <div class="exp-body">
+                                <div class="exp-role-title-single">Student Assistant</div>
+                                <div class="exp-company">University of Vienna <span class="exp-type">· Part-time</span></div>
+                                <div class="exp-dates-single">Sep 2024 – Present</div>
+                                <div class="exp-meta">Vienna, Austria · Hybrid</div>
+                                <div class="exp-desc">Doctoral School of Computer Science</div>
+                            </div>
+                        </div>
+
+                        <!-- Summer Intern -->
+                        <div class="exp-card">
+                            <img src="../photos/experience/uniqa.jpeg" alt="UNIQA" class="exp-logo">
+                            <div class="exp-body">
+                                <div class="exp-role-title-single">Summer Intern: Data Analytics</div>
+                                <div class="exp-company">UNIQA Insurance Group <span class="exp-type">· Internship</span></div>
+                                <div class="exp-dates-single">Jul 2024 – Aug 2024 · 2 mos</div>
+                                <div class="exp-meta">Vienna, Austria · On-site</div>
+                            </div>
+                        </div>
+
+                    </div>
                 </section>
 
             </main>
@@ -147,7 +210,7 @@
             <aside class="sidebar-right">
                 <div class="info-card">
                     <div class="info-item">
-                        <img src="../photos/experience/curent_job.jpeg" alt="UNIQA" class="info-logo">
+                        <img src="../photos/experience/uniqa.jpeg" alt="UNIQA" class="info-logo">
                         <div>
                             <div class="info-label">Current Job</div>
                             <div class="info-value">Uniqa Insurance Group
@@ -168,6 +231,7 @@
         </div>
     </div>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -286,8 +286,8 @@ body {
 }
 
 .edu-logo {
-    width: 64px;
-    height: 64px;
+    width: 56px;
+    height: 56px;
     object-fit: cover;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -335,6 +335,162 @@ body {
     line-height: 1.7;
     color: #86868b;
     margin-top: 2px;
+}
+
+.edu-courses {
+    list-style: none;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.edu-courses li {
+    font-size: 0.78rem;
+    color: #636366;
+    padding: 0 !important;
+    border: none !important;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.edu-courses li::before {
+    content: '';
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #48484a;
+    flex-shrink: 0;
+}
+
+/* === EXPERIENCE CARDS === */
+.exp-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.exp-card {
+    display: flex;
+    gap: 18px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 20px;
+    transition: border-color 0.2s ease;
+}
+
+.exp-card:hover {
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.exp-logo {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+    align-self: flex-start;
+}
+
+.exp-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.exp-company {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #f5f5f7;
+}
+
+.exp-type {
+    font-weight: 400;
+    color: #636366;
+}
+
+.exp-role-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 6px 0 4px;
+    padding-left: 12px;
+    border-left: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.exp-role {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.exp-role-title {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #d1d1d6;
+}
+
+.exp-role-title-single {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #f5f5f7;
+}
+
+.exp-dates {
+    font-size: 0.75rem;
+    color: #636366;
+}
+
+.exp-dates-single {
+    font-size: 0.78rem;
+    color: #636366;
+}
+
+.exp-meta {
+    font-size: 0.78rem;
+    color: #48484a;
+    margin-top: 2px;
+}
+
+.exp-desc {
+    font-size: 0.83rem;
+    color: #86868b;
+    margin-top: 2px;
+}
+
+/* === YOUTUBE STATS === */
+.yt-stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: rgba(255, 0, 0, 0.06);
+    border: 1px solid rgba(255, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.yt-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.yt-stat-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f5f5f7;
+}
+
+.yt-stat-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #636366;
 }
 
 /* === PANEL ANIMATION === */
