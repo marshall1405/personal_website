@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+/* === ACCENT COLOR === */
+:root {
+    --yellow: #FFD60A;
+}
+
 /* === BASE === */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
@@ -39,6 +44,10 @@ body {
     color: #f5f5f7;
 }
 
+.accent {
+    color: var(--yellow);
+}
+
 /* === NAV === */
 .nav {
     display: flex;
@@ -69,8 +78,8 @@ body {
 }
 
 .nav-btn.active {
-    background: rgba(255, 255, 255, 0.12);
-    color: #f5f5f7;
+    background: rgba(255, 214, 10, 0.12);
+    color: var(--yellow);
     font-weight: 600;
 }
 
@@ -135,7 +144,7 @@ body {
 }
 
 .profile-link:hover {
-    color: #f5f5f7;
+    color: var(--yellow);
 }
 
 /* === CENTER: Content === */
@@ -282,7 +291,7 @@ body {
 }
 
 .edu-card:hover {
-    border-color: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 214, 10, 0.3);
 }
 
 .edu-logo {
@@ -365,6 +374,82 @@ body {
     flex-shrink: 0;
 }
 
+/* === PROJECT CARDS === */
+.proj-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.proj-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 20px;
+    transition: border-color 0.2s ease;
+}
+
+.proj-card:hover {
+    border-color: rgba(255, 214, 10, 0.3);
+}
+
+.proj-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.proj-body {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+.proj-header {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.proj-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #f5f5f7;
+}
+
+.proj-link {
+    font-size: 0.75rem;
+    color: #636366;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.proj-link:hover {
+    color: var(--yellow);
+}
+
+.proj-meta {
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #636366;
+}
+
+.proj-desc {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: #86868b;
+    margin-top: 2px;
+}
+
 /* === EXPERIENCE CARDS === */
 .exp-list {
     display: flex;
@@ -383,7 +468,7 @@ body {
 }
 
 .exp-card:hover {
-    border-color: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 214, 10, 0.3);
 }
 
 .exp-logo {
@@ -515,7 +600,7 @@ body {
     pointer-events: none;
 }
 
-.intro-overlay span {
+.intro-overlay > span {
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
     font-size: 3.5rem;
     font-weight: 700;

@@ -8,13 +8,13 @@
 </head>
 <body class="is-intro">
     <div class="intro-overlay">
-        <span>David Pavlicek</span>
+        <span>David <span class="accent">Pavlicek</span></span>
     </div>
     <div class="page">
 
         <!-- HEADER -->
         <header class="header">
-            <h1 class="name">David Pavlicek</h1>
+            <h1 class="name">David <span class="accent">Pavlicek</span></h1>
             <nav class="nav">
                 <button class="nav-btn active" data-target="about">About Me</button>
                 <button class="nav-btn" data-target="skills">Skills</button>
@@ -77,11 +77,51 @@
 
                 <section id="projects" class="panel">
                     <h2>Projects</h2>
-                    <ul>
-                        <li>Personal Website — This site!</li>
-                        <li>Project Two — Description here</li>
-                        <li>Project Three — Description here</li>
-                    </ul>
+                    <div class="proj-list">
+
+                        <div class="proj-card">
+                            <div class="proj-body">
+                                <div class="proj-header">
+                                    <span class="proj-name">DOOM-XT4</span>
+                                    <a href="https://github.com/marshall1405/doom-xt4" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+                                </div>
+                                <div class="proj-meta">C++ · ESP32-C3 · E-ink · Raycasting</div>
+                                <div class="proj-desc">
+                                    A Wolfenstein-style raycaster built for an ESP32-C3 e-ink display. Runs on ~87 KB of RAM with enemy AI, a HUD, and full game screens.
+                                </div>
+                            </div>
+                            <img src="../photos/projects/doom-xt4.jpeg" alt="DOOM-XT4" class="proj-img">
+                        </div>
+
+                        <div class="proj-card">
+                            <div class="proj-body">
+                                <div class="proj-header">
+                                    <span class="proj-name">Learn Cards</span>
+                                    <a href="https://github.com/marshall1405/learn_cards" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+                                </div>
+                                <div class="proj-meta">C++ · wxWidgets · CMake</div>
+                                <div class="proj-desc">
+                                    A Quizlet-style flashcard desktop app. Load card sets from text files, flip through terms and answers with keyboard controls, and pick up where you left off with automatic progress saving.
+                                </div>
+                            </div>
+                            <img src="../photos/projects/learn_cards.png" alt="Learn Cards" class="proj-img">
+                        </div>
+
+                        <div class="proj-card">
+                            <div class="proj-body">
+                                <div class="proj-header">
+                                    <span class="proj-name">Sport Reminder</span>
+                                    <a href="https://github.com/marshall1405/sport_reminder" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+                                </div>
+                                <div class="proj-meta">Python · Playwright · GitHub Actions · Gmail</div>
+                                <div class="proj-desc">
+                                    Automated daily emails with tennis matches for your favorite players. Scrapes livescore data via headless Chromium and sends personalized HTML emails every morning at 8 AM CET.
+                                </div>
+                            </div>
+                            <img src="../photos/projects/sport_v_obraze.png" alt="Sport Reminder" class="proj-img">
+                        </div>
+
+                    </div>
                 </section>
 
                 <section id="education" class="panel">
